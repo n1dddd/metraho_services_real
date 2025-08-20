@@ -28,7 +28,7 @@ const Header = () => {
           </nav>
           
           <div className="flex items-center space-x-4">
-            <a href="tel:123-456-7890" className="hidden md:flex items-center text-blue-600 font-medium">
+            <a href="tel:647-763-7427" className="hidden md:flex items-center text-blue-600 font-medium">
               <Phone className="h-4 w-4 mr-1" />
               (647)-763-7427
             </a>
