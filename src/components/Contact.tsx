@@ -28,7 +28,7 @@ const Contact = () => {
   });
   const isLoading = form.formState.isSubmitting;
   const onSubmit = async (values: z.infer<typeof contactFormSchema>) => {
-    const mailText = `First name: ${values.first_name} \nLast name: ${values.last_name} \nEmail: ${values.email} \n Message: ${values.message}`;
+    const mailText = `First name: ${values.first_name} \nLast name: ${values.last_name} \nEmail: ${values.email} \nMessage: ${values.message}`;
     const response = await sendMail({
       email: values.email,
       subject: "New Contact Us Form",
