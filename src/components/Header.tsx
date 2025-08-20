@@ -10,6 +10,7 @@ const Header = () => {
           <div className="flex items-center space-x-2">
             <div className="bg-gray-200 p-2 rounded-lg">
               <Image 
+                alt = "MetraHo Services Logo"
                 priority
                 src="/images/metraho_svg.svg"
                 height={64}
