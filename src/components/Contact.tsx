@@ -28,7 +28,7 @@ const Contact = () => {
   });
   const isLoading = form.formState.isSubmitting;
   const onSubmit = async (values: z.infer<typeof contactFormSchema>) => {
-    const mailText = `First name: ${values.first_name} \n Last name: ${values.last_name} \n Email: ${values.email} \n Message: ${values.message}`;
+    const mailText = `First name: ${values.first_name} \nLast name: ${values.last_name} \nEmail: ${values.email} \n Message: ${values.message}`;
     const response = await sendMail({
       email: values.email,
       subject: "New Contact Us Form",
@@ -63,7 +63,10 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-medium">Phone</div>
-                  <div className="text-gray-300">(647)-763-7427</div>
+                  <a href="tel:123-456-7890" className="hidden md:flex items-center text-blue-600 font-medium">
+                                              <Phone className="h-4 w-4 mr-1" />
+                                              (647)-763-7427
+                                            </a>
                 </div>
               </div>
 

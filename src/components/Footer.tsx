@@ -1,5 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import { Phone } from 'lucide-react';
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -9,35 +10,57 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="bg-gray-200 p-2 rounded-lg">
-                <Image 
-                    alt = "MetraHo Services Logo"
-                    priority
-                    src="/images/metraho_svg.svg"
-                    height={64}
-                    width={64}
+                <Image
+                  alt="MetraHo Services Logo"
+                  priority
+                  src="/images/metraho_services_logo.svg"
+                  className="dark:invert"
+                  height={90}
+                  width={90}
                 />
               </div>
               <span className="text-2xl font-bold">MetraHo Services</span>
             </div>
             <p className="text-gray-400 max-w-md">
-              Professional moving services you can trust. We make your relocation stress-free with our experienced team and comprehensive solutions.
+              Professional moving services you can trust. We make your
+              relocation stress-free with our experienced team and comprehensive
+              solutions.
             </p>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Residential Moving</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Commercial Moving</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Packing Services</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Long Distance</a></li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Residential Moving
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Commercial Moving
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Packing Services
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Long Distance
+                </a>
+              </li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Tel: (647)-763-7427</li>
+              <a href="tel:123-456-7890" className="hidden md:flex items-center text-blue-600 font-medium">
+                            <Phone className="h-4 w-4 mr-1" />
+                            (647)-763-7427
+                          </a>
               <li>metrahoservices@gmail.com</li>
               <li>Greater Ottawa Area</li>
             </ul>

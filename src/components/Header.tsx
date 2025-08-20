@@ -12,9 +12,10 @@ const Header = () => {
               <Image 
                 alt = "MetraHo Services Logo"
                 priority
-                src="/images/metraho_svg.svg"
-                height={64}
-                width={64}
+                src="/images/metraho_services_logo.svg"
+                className="dark:invert"
+                height={90}
+                width={90}
                 />
             </div>
             <span className="text-2xl md:text-4xl font-bold text-gray-900">MetraHo Services</span>
